@@ -7,19 +7,18 @@ This is a personal portfolio website project designed to showcase skills, projec
 The project is organized as follows:
 
 ```
-portfolio-website
-├── src
-│   ├── index.html          # Main HTML file serving as the entry point
-│   ├── css
-│   │   └── styles.css      # Styles for the website
-│   ├── js
-│   │   └── main.js         # JavaScript for interactivity
-│   ├── sections
-│   │   ├── resume.html     # Resume section
-│   │   ├── about.html      # Personal information section
-│   │   ├── projects.html    # Projects and technologies section
-│   │   └── contact.html     # Contact me section
-└── README.md               # Project documentation
+personal-portfolio
+├── index.html          # Main HTML file serving as the entry point
+├── css
+│   └── styles.css      # Styles for the website
+├── js
+│   └── main.js         # JavaScript for interactivity
+├── sections
+│   ├── resume.html     # Resume section
+│   ├── about.html      # Personal information section
+│   ├── projects.html   # Projects and technologies section
+│   └── contact.html    # Contact me section
+└── README.md          # Project documentation
 ```
 
 ## Features
