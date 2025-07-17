@@ -1,8 +1,10 @@
 :root {
-    --primary-color: #2a2a2a;
-    --accent-color: #007bff;
-    --text-color: #333;
-    --light-bg: #f8f9fa;
+    --primary-color: #000000;
+    --accent-color: #00ff00;  /* Neon green accent */
+    --text-color: #ffffff;
+    --dark-bg: #121212;
+    --darker-bg: #0a0a0a;
+    --header-bg: rgba(0, 0, 0, 0.95);
 }
 
 * {
@@ -15,14 +17,14 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: #f4f4f4;
+    background-color: var(--primary-color);
 }
 
 header {
     position: fixed;
     width: 100%;
-    background: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: var(--header-bg);
+    box-shadow: 0 2px 5px rgba(255,255,255,0.1);
     z-index: 1000;
 }
 
@@ -57,6 +59,11 @@ nav ul li a {
     color: var(--text-color);
     padding: 0.5rem 1rem;
     margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
 }
 
 section {
@@ -65,10 +72,15 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: var(--dark-bg);
+}
+
+section:nth-child(even) {
+    background-color: var(--darker-bg);
 }
 
 #hero {
-    background: var(--light-bg);
+    background: var(--primary-color);
     text-align: center;
 }
 
@@ -91,7 +103,7 @@ section {
 }
 
 .contact-content a {
-    color: var(--primary-color);
+    color: var(--text-color);
     transition: color 0.3s;
 }
 
@@ -103,11 +115,19 @@ footer {
     text-align: center;
     padding: 2rem;
     background: var(--primary-color);
-    color: white;
+    color: var(--text-color);
+    border-top: 1px solid var(--accent-color);
 }
 
-h2 {
-    color: #35424a;
+.logo {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h1, h2 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
 }
 
 ul {
