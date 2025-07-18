@@ -6,6 +6,7 @@
     <title>Anurag Krosuru - Portfolio</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -31,7 +32,10 @@
         <section id="about">
             <h2>About Me</h2>
             <div class="about-content">
-                <p>Your introduction goes here. Talk about your passion for technology and what drives you.</p>
+                <p>Hello! I’m an aspiring software engineer currently studying 
+                    Computer Science at the University of Michigan School
+                     of Engineering. My main interests include LLMs and their 
+                     integration into web technologies</p>
             </div>
         </section>
 
@@ -45,16 +49,38 @@
         <section id="projects">
             <h2>Projects</h2>
             <div class="projects-grid">
-                <!-- Project cards will go here -->
+                <div class="project-card">
+                    <h3>Personal Portfolio</h3>
+                    <p>A modern, responsive portfolio website built with HTML, CSS, and JavaScript. Features smooth scrolling, animated sections, and a clean design.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Chatbot Assistant</h3>
+                    <p>An AI-powered chatbot that helps users with coding questions and automates tasks. Integrates with APIs and features a conversational UI.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Weather Dashboard</h3>
+                    <p>A real-time weather dashboard using OpenWeatherMap API. Displays current conditions, forecasts, and interactive charts.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
             </div>
         </section>
 
         <section id="contact">
             <h2>Contact Me</h2>
             <div class="contact-content">
-                <a href="mailto:anuragkr@umich.edu"><i class="fas fa-envelope"></i></a>
-                <a href="https://github.com/anuragkrosuru"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/anuragkro"><i class="fab fa-linkedin"></i></a>
+                <form class="contact-form" id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div class="contact-icons">
+                    <a href="mailto:anuragkr@umich.edu" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/anuragkrosuru" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/anuragkro" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
             </div>
         </section>
     </main>
