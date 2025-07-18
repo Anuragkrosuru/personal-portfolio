@@ -196,6 +196,16 @@ section:nth-child(even) {
     text-decoration: underline;
 }
 
+.project-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.7rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    height: 3.2rem;
+}
+
 .contact-content {
     display: flex;
     gap: 3rem;
@@ -340,4 +350,125 @@ ul li {
 .section-animate.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin-top: 1.5rem;
+    justify-content: flex-start;
+}
+
+.skills-group {
+    background: rgba(20, 30, 40, 0.92);
+    border-radius: 14px;
+    box-shadow: 0 2px 12px 0 rgba(74,191,230,0.08);
+    padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+    min-width: 210px;
+    flex: 1 1 220px;
+    max-width: 270px;
+}
+
+.skills-group h4 {
+    color: var(--accent-color);
+    margin-bottom: 0.7rem;
+    font-size: 1.08rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.skills-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+    font-size: 1.08rem;
+    color: var(--text-color);
+    background: rgba(74,191,230,0.07);
+    border-radius: 8px;
+    padding: 0.45em 0.8em;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+}
+
+.skills-list li i {
+    font-size: 1.25em;
+    color: var(--accent-color);
+    min-width: 1.3em;
+    text-align: center;
+}
+
+.skills-list li:hover {
+    background: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.skills-list li:hover i {
+    color: var(--primary-color);
+}
+
+.exp-summary {
+    font-size: 1.04rem;
+    color: var(--accent-color);
+    margin: 0.3em 0 0.7em 0;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+    margin-top: 1.5rem;
+}
+
+.experience-item {
+    background: rgba(20, 30, 40, 0.92);
+    border-radius: 14px;
+    box-shadow: 0 2px 12px 0 rgba(74,191,230,0.08);
+    padding: 1.3rem 1.7rem 1.1rem 1.7rem;
+    border-left: 4px solid var(--accent-color);
+    transition: box-shadow 0.2s, border-color 0.2s;
+    position: relative;
+}
+
+.experience-item:hover {
+    box-shadow: 0 6px 24px 0 var(--accent-color), 0 2px 12px 0 rgba(74,191,230,0.10);
+    border-color: #fff;
+}
+
+.exp-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.7em 1.2em;
+    margin-bottom: 0.3em;
+}
+
+.exp-role {
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 1.13rem;
+}
+
+.exp-company {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1.08rem;
+}
+
+.exp-dates {
+    color: #b0c4d8;
+    font-size: 0.98rem;
+    margin-left: auto;
+    font-style: italic;
 }
